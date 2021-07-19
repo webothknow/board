@@ -64,6 +64,10 @@ function App() {
     finJ: 50,
     finK: 50,
     finL: 50,
+    finO: 50,
+    finP: 50,
+    finQ: 50,
+    finR: 50,
   });
 
   useEffect(() => {
@@ -97,8 +101,8 @@ function App() {
       send_cmd("bw0.1", "finp", "onb", fin.finP);
     } else if (fin.finQ !== 50) {
       send_cmd("bw0.1", "finq", "onb", fin.finQ);
-    } else if (fin.finL !== 50) {
-      send_cmd("bw0.1", "finR", "onb", fin.finR);
+    } else if (fin.finR !== 50) {
+      send_cmd("bw0.1", "finr", "onb", fin.finR);
     }
   }, [
     fin.finA,
